@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mikroživiny</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h2>Denní příjem vody</h2>
+    <div id="containerWater">
+        <h4>Zadejte Vaší hmotnost:</h4>
+        <input type="number" id="weight" placeholder="Hmotnost v Kg">
+        <h4>Kolik hodin denně věnujete fyzické aktivitě:</h4>
+        <input type="number" id="activity" placeholder="Fyfická aktivita v hod">
+        <button onclick="calculateWaterInTake()">Vypočítat</button>
+        <p id="showResult"></p>
+    </div>
+    <button onclick="restart()" hidden>Zopakovat výpočet</button>
+    <button onclick="end()" hidden>Ukončit program</button>
+
+    <h2>Denní příjem makroživin</h2>
+
+    <div id="container">
+        <h4>Zadejte Vaší hmotnost:</h4>
+        <input type="number" id="weightTwo" placeholder="Hmotnost v Kg">
+        <h4>Vaše pohlaví:</h4>
+        <select id="gender">
+            <option value="none">Výběr</option>
+            <option value="fm" id="fm">Žena</option>
+            <option value="ml" id="ml">Muž</option>
+        </select>
+        <h4>Váš váhový cíl:</h4>
+        <select id="goals">
+            <option value="none">Výběr</option>
+            <option value="weightLoss" id="WeightLoss">Hubnutí</option>
+            <option value="weightHold" id="WeightHold">Udržení váhy</option>
+            <option value="muscleGain" id="muscleGain">Nabrání svalové hmoty</option>
+        </select>
+        <button onclick="calculateMacros()">Vypočítat</button>
+        <p id="recommend"></p>
+    </div>
+</body>

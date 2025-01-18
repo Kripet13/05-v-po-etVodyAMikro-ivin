@@ -1,0 +1,85 @@
+h2 {
+    margin-top: 1.3em;
+    color: rgb(88, 110, 6);
+    text-align: center;
+    font-family: cursive;
+}
+
+h4 {
+    margin-top: 1em;
+    color: #304401;
+    text-align: center;
+}
+
+div {
+    border: 5px solid rgb(222, 238, 182);
+    border-radius: 20px;
+    background-color: rgb(222, 238, 182);
+    text-align: center;
+    line-height: 1.5;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 40vw;
+}
+
+p {
+    margin: 20px;
+    padding: 7px; 
+    margin: 20px;
+    padding: 7px; 
+}
+
+#containerWater {
+    display: flex;
+    flex-direction: column;
+}
+
+#containerWater input {
+   margin: 9px;
+   padding: 9px;
+   font-size: 15px;
+   text-align: center;
+}
+
+#containerWater button {
+    margin: 8px;
+    padding: 7px;
+    font-size: 12px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+#container input {
+    margin: 9px;
+    padding: 9px;
+    font-size: 15px;
+    text-align: center;
+    display: inline-block;
+}
+
+#container select {
+    margin: 9px;
+    padding: 9px;
+    font-size: 15px;
+    text-align: center;
+}
+
+#container button {
+    margin: 8px;
+    padding: 7px;
+    font-size: 12px;
+}
+
+button[onclick="restart()"],
+button[onclick="end()"] {
+    background-color: #93c71b;
+    margin: 9px;
+    padding: 9px;
+    font-size: 15px;
+    position: relative;
+    left: 41vw;
+    right: 57vw;
+}
